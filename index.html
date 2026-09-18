@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Painel Anthony</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#a15c2a">
+  <link rel="icon" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Painel">
+</head>
+<body>
+
+  <header>
+    <h1>Olá, Anthony 👋</h1>
+    <p id="data-hoje"></p>
+  </header>
+
+  <main>
+    <section id="foco">
+      <h2>Foco de hoje</h2>
+      <input type="text" id="input-foco" placeholder="Qual é o foco de hoje?">
+    </section>
+
+    <section id="tarefas">
+      <h2>Tarefas</h2>
+      <form id="form-tarefa">
+        <input type="text" id="input-tarefa" placeholder="Nova tarefa" required>
+        <button type="submit">Adicionar</button>
+      </form>
+      <ul id="lista-tarefas"></ul>
+    </section>
+
+    <section id="areas">
+      <h2>Minhas áreas</h2>
+      <div class="grid-areas">
+
+        <article class="card" data-area="estudos">
+          <h3>📚 Contabilidade</h3>
+          <textarea placeholder="Anotação rápida do dia..."></textarea>
+        </article>
+
+        <article class="card" data-area="chapelaria">
+          <h3>🎩 Chapelaria Roots</h3>
+          <textarea placeholder="Anotação rápida do dia..."></textarea>
+        </article>
+
+        <article class="card" data-area="vendas">
+          <h3>📈 Vendas / Tráfego</h3>
+          <textarea placeholder="Anotação rápida do dia..."></textarea>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
